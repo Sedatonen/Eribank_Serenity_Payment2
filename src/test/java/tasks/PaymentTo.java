@@ -44,7 +44,7 @@ public class PaymentTo implements Task {
 
     }
 
-    public static PaymentTo info(Integer country) {
-        return instrumented(PaymentTo.class,country);
+    public static PaymentTo info() {
+        return instrumented(PaymentTo.class);
     }
 }

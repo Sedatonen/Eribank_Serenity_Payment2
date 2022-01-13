@@ -47,7 +47,7 @@ public class AuthSteps {
 
     @When("Make payment with random phone,name,payments and countries")
     public void make_payment_with_random_phone_name_payments_and_countries() {
-        actor.attemptsTo(PaymentTo.info(HelperMethods.getRandomCountry()));
+        actor.attemptsTo(PaymentTo.info());
         balance = 100;
         balance = balance - HelperMethods.getRandomPrice();
     }
